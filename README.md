@@ -14,6 +14,7 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 **Table of Contents**
 
 - [Description](#description)
@@ -46,6 +47,9 @@
 
 Github Action generates table of contents for markdown files inside local git repository.
 
+> \[!NOTE]
+> Based on Node.js application [DocToc](https://github.com/thlorenz/doctoc) created by [Thorsten Lorenz](https://github.com/thlorenz)
+
 ## Features
 
 - \[x] works as designed
@@ -73,7 +77,7 @@ bla bla
 
 ## Dependencies
 
-bla bla
+[DocToc](https://github.com/thlorenz/doctoc)
 
 # folder structure
 
@@ -115,23 +119,12 @@ bla bla
 
 ## Parameters
 
-<!-- only for actions repo -->
+> \[!IMPORTANT]
+> Inputs support still in progress.
 
 ## Inputs
 
 ## Outputs
-
-        <rz-footer></rz-footer>
-
-<!---->
-
-| Parameter    | Type     | Description                          |
-| :----------- | :------- | :----------------------------------- |
-| `name`       | `string` | _Optional_ name-of-copyright-holder  |
-| `created`    | `string` | _Optional_ <YYYY>                    |
-| `version`    | `string` | _Optional_ \<v0.0.0>                 |
-| `link_left`  | `string` | _Optional_ link-to-contact-page      |
-| `link_right` | `string` | _Optional_ link-to-legal-notice-page |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
