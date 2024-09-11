@@ -24,7 +24,7 @@
 ![GHA](https://img.shields.io/badge/Github-Action-black?logo=githubactions)
 ![Node](https://img.shields.io/badge/Node-20-blue?logo=tsnode)
 
-description of this
+Github Action generates table of contents for markdown files inside local git repository.
 
 ### Features
 
@@ -58,6 +58,7 @@ bla bla
 ### folder structure
 
 <!-- readme-tree start -->
+
 ```
 .
 ├── .github
@@ -77,6 +78,7 @@ bla bla
 
 3 directories, 11 files
 ```
+
 <!-- readme-tree end -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
