@@ -14,6 +14,7 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 **Table of Contents**
 
 - [Description](#description)
@@ -47,7 +48,7 @@
 Github Action generates table of contents for markdown files inside local git repository.
 
 > \[!NOTE]
-> Based on Node.js application [DocToc](https://github.com/thlorenz/doctoc) created by [Thorsten Lorenz](https://github.com/thlorenz)
+> Based on Node.js application [DocToc](https://github.com/thlorenz/doctoc) created by [Thorsten Lorenz](https://github.com/thlorenz) and ![Contributors](https://img.shields.io/github/contributors/thlorenz/doctoc?color=dark-green)
 
 ## Features
 
@@ -71,6 +72,47 @@ Github Action generates table of contents for markdown files inside local git re
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # Installation
+
+just use it ;-)
+
+> [!Note]
+> not yet tested with GHES
+
+## Dependencies
+
+[DocToc](https://github.com/thlorenz/doctoc)
+
+# folder structure
+
+<!-- readme-tree start -->
+
+```
+.
+├── .github
+│   └── workflows
+│       ├── repo-actions_docu.yml
+│       ├── repo-create_doctoc.yml
+│       └── repo-create_tree_readme.yml
+├── LICENSE
+├── README.md
+├── action.yml
+├── dist
+│   ├── index.js
+│   ├── index.js.map
+│   ├── licenses.txt
+│   └── sourcemap-register.js
+└── tree.bak
+
+3 directories, 11 files
+```
+
+<!-- readme-tree end -->
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+# Usage/Examples
+
+see `.github/workflows/repo-create_doctoc.yml`:
 
 ```yaml
 name: Repo - create TOC of README
@@ -133,42 +175,6 @@ jobs:
           files: README.md
           name: "github-actions[bot]"
           email: "github-actions[bot]@users.noreply.github.com"
-```
-
-## Dependencies
-
-[DocToc](https://github.com/thlorenz/doctoc)
-
-# folder structure
-
-<!-- readme-tree start -->
-```
-.
-├── .github
-│   └── workflows
-│       ├── repo-actions_docu.yml
-│       ├── repo-create_doctoc.yml
-│       └── repo-create_tree_readme.yml
-├── LICENSE
-├── README.md
-├── action.yml
-├── dist
-│   ├── index.js
-│   ├── index.js.map
-│   ├── licenses.txt
-│   └── sourcemap-register.js
-└── tree.bak
-
-3 directories, 11 files
-```
-<!-- readme-tree end -->
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-# Usage/Examples
-
-```html
-<mark> under constrcution </mark>
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -260,7 +266,7 @@ SOFTWARE.
 
 ## Code Contributors
 
-![Contributors](https://img.shields.io/github/contributors/thlorenz/doctoc?color=dark-green)
+![Contributors](https://img.shields.io/github/contributors/Zheng-Bote/gha-doctoc?color=dark-green)
 
 [![Zheng Robert](https://img.shields.io/badge/Github-Zheng_Robert-black?logo=github)](https://www.github.com/Zheng-Bote)
 
