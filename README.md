@@ -26,14 +26,14 @@
 - [Usage/Examples](#usageexamples)
 - [API Reference](#api-reference)
   - [Parameters](#parameters)
-  - [Inputs -->](#inputs---)
-  - [Outputs -->](#outputs---)
+  - [Inputs](#inputs)
+  - [Outputs](#outputs)
 - [Documentation](#documentation)
   - [Github Page](#github-page)
   - [Screenshots](#screenshots)
 - [Authors and License](#authors-and-license)
   - [License](#license)
-- [Authors](#authors)
+  - [Authors](#authors)
   - [Code Contributors](#code-contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -73,7 +73,68 @@ Github Action generates table of contents for markdown files inside local git re
 
 # Installation
 
-bla bla
+```yaml
+name: Repo - create TOC of README
+# description: https://github.com/thlorenz/doctoc
+
+# README.md:
+# <!-- START doctoc -->
+# <!-- END doctoc -->
+
+run-name: create README table of contents by ${{ github.actor }}
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "main"
+    paths:
+      - "README.md"
+
+permissions:
+  contents: write
+
+jobs:
+  generateTOC:
+    name: TOC Generator
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: "main"
+
+      - uses: Zheng-Bote/gha-doctoc@main
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET_PATHS: ./README.md
+          FOLDING: false
+
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v20
+        id: verify_changed_files
+        with:
+          files: |
+            README.md
+
+      - name: README.md changed
+        if: steps.verify_changed_files.outputs.files_changed == 'false'
+        run: |
+          echo "README.md has no uncommitted changes"
+          exit 1
+
+      - name: commit and push
+        if: steps.verify_changed_files.outputs.files_changed == 'true'
+        uses: github-actions-x/commit@v2.9
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          push-branch: "main"
+          commit-message: "appended by Github Actions"
+          force-add: "true"
+          files: README.md
+          name: "github-actions[bot]"
+          email: "github-actions[bot]@users.noreply.github.com"
+```
 
 ## Dependencies
 
@@ -171,7 +232,7 @@ see also: <https://linktodocumentation>
 
 **MIT License**
 
-- doctoc (Node.js): Copyright 2013 Thorsten Lorenz.
+- doctoc (see `dist` folder): Copyright 2013 Thorsten Lorenz.
 
 - gha-doctoc (GH Action and Workflows): Copyright (c) 2024 ZHENG Robert
 
