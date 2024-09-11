@@ -143,7 +143,6 @@ jobs:
 # folder structure
 
 <!-- readme-tree start -->
-
 ```
 .
 ├── .github
@@ -163,7 +162,6 @@ jobs:
 
 3 directories, 11 files
 ```
-
 <!-- readme-tree end -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
