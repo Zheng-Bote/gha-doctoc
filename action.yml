@@ -197,7 +197,9 @@ runs:
         cache: "npm"
         cache-dependency-path: subdir/package-lock.json
     - run: npm ci
+      shell: bash
     - run: npm test
+      shell: bash
     - name: doctoc
       run: dist/index.js .
       shell: bash
