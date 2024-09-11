@@ -37,21 +37,21 @@
 
 <hr>
 
-## Description
+# Description
 
 ![GHA](https://img.shields.io/badge/Github-Action-black?logo=githubactions)
 ![Node](https://img.shields.io/badge/Node-20-blue?logo=tsnode)
 
 Github Action generates table of contents for markdown files inside local git repository.
 
-### Features
+## Features
 
 - \[x] works as designed
 - \[ ] no bugs
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Status
+# Status
 
 ![Status](https://img.shields.io/badge/Status-works-green)
 ![GitHub Release Date](https://img.shields.io/github/release-date/Zheng-Bote/gha-doctoc)
@@ -65,17 +65,18 @@ Github Action generates table of contents for markdown files inside local git re
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Installation
+# Installation
 
 bla bla
 
-### Dependencies
+## Dependencies
 
 bla bla
 
-### folder structure
+# folder structure
 
 <!-- readme-tree start -->
+
 ```
 .
 ├── .github
@@ -95,11 +96,12 @@ bla bla
 
 3 directories, 11 files
 ```
+
 <!-- readme-tree end -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Usage/Examples
+# Usage/Examples
 
 ```html
 <mark> under constrcution </mark>
@@ -107,15 +109,15 @@ bla bla
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## API Reference
+# API Reference
 
-### Parameters
+## Parameters
 
 <!-- only for actions repo -->
 
-<!-- ## Inputs -->
+## Inputs -->
 
-<!-- ## Outputs -->
+## Outputs -->
 
         <rz-footer></rz-footer>
 
@@ -131,7 +133,7 @@ bla bla
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Documentation
+# Documentation
 
 ```mermaid
 graph TD;
@@ -139,7 +141,7 @@ graph TD;
     Callable_Workflow-- parameter -->Action;
 ```
 
-### Github Page
+## Github Page
 
 [![GH-Page](https://img.shields.io/badge/Github-Pages-black?logo=github)](https://www.github.com/Zheng-Bote)
 
@@ -168,11 +170,9 @@ see also: <https://linktodocumentation>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Authors and License
+# Authors and License
 
-### License
-
-#### MIT
+## License
 
 **MIT License**
 
@@ -200,7 +200,7 @@ SOFTWARE.
 
         https://choosealicense.com/licenses/mit/
 
-### Authors
+# Authors
 
 - [![Zheng Robert](https://img.shields.io/badge/Github-Zheng_Robert-black?logo=github)](https://www.github.com/Zheng-Bote)
 
