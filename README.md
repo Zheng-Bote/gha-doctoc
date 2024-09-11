@@ -115,9 +115,9 @@ bla bla
 
 <!-- only for actions repo -->
 
-## Inputs -->
+## Inputs
 
-## Outputs -->
+## Outputs
 
         <rz-footer></rz-footer>
 
@@ -200,13 +200,14 @@ SOFTWARE.
 
         https://choosealicense.com/licenses/mit/
 
-# Authors
+## Authors
 
+- [![Thorsten Lorenz](https://img.shields.io/badge/Github-Thorsten_Lorenz-black?logo=github)](https://www.github.com/thlorenz)
 - [![Zheng Robert](https://img.shields.io/badge/Github-Zheng_Robert-black?logo=github)](https://www.github.com/Zheng-Bote)
 
 ## Code Contributors
 
-![Contributors](https://img.shields.io/github/contributors/Zheng-Bote/gha-doctoc?color=dark-green)
+![Contributors](https://img.shields.io/github/contributors/thlorenz/doctoc?color=dark-green)
 
 [![Zheng Robert](https://img.shields.io/badge/Github-Zheng_Robert-black?logo=github)](https://www.github.com/Zheng-Bote)
 
