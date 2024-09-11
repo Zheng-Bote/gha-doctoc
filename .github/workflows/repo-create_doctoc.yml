@@ -23,8 +23,48 @@ jobs:
     name: TOC Generator
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: "main"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+          cache-dependency-path: subdir/package-lock.json
+
+      - run: npm ci
+
+      - run: npm test
+
       - uses: Zheng-Bote/gha-doctoc@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TARGET_PATHS: ./README.md
           FOLDING: false
+
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v20
+        id: verify_changed_files
+        with:
+          files: |
+            README.md
+
+      - name: README.md changed
+        if: steps.verify_changed_files.outputs.files_changed == 'false'
+        run: |
+          echo "README.md has no uncommitted changes"
+          exit 1
+
+      - name: commit and push
+        if: steps.verify_changed_files.outputs.files_changed == 'true'
+        uses: github-actions-x/commit@v2.9
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          push-branch: "main"
+          commit-message: "appended by Github Actions"
+          force-add: "true"
+          files: README.md
+          name: "github-actions[bot]"
+          email: "github-actions[bot]@users.noreply.github.com"
