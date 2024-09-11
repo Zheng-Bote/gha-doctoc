@@ -188,5 +188,5 @@ runs:
   using: "composite"
   steps:
     - name: doctoc
-      run: dist/index.js .
+      run: dist/index.js . --github --title '**Table of Contents**'
       shell: bash
