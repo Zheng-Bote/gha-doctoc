@@ -1,12 +1,12 @@
 <div id="top" align="center">
-<h1>GH Repo README Template</h1>
+<h1>GH Action doctoc</h1>
 
-<p>Template for new Github repos</p>
+<p>GH Action to create Table of Contents in Markdonw files</p>
 
-[Report Issue](https://github.com/Zheng-Bote/repo-template/issues) [Request Feature](https://github.com/Zheng-Bote/repo-template/pulls)
+[Report Issue](https://github.com/Zheng-Bote/gha-doctoc/issues) [Request Feature](https://github.com/Zheng-Bote/gha-doctoc/pulls)
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-![GitHub Created At](https://img.shields.io/github/created-at/Zheng-Bote/repo-template)
+![GitHub Created At](https://img.shields.io/github/created-at/Zheng-Bote/gha-doctoc)
 
 </div>
 
@@ -14,25 +14,6 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
-
-- [Description](#description)
-  - [Features](#features)
-- [Status](#status)
-- [Installation](#installation)
-  - [Dependencies](#dependencies)
-  - [folder structure](#folder-structure)
-- [Usage/Examples](#usageexamples)
-- [API Reference](#api-reference)
-  - [Parameters](#parameters)
-- [Documentation](#documentation)
-  - [Github Page](#github-page)
-- [Screenshots](#screenshots)
-- [Authors and License](#authors-and-license)
-  - [License](#license)
-    - [MIT](#mit)
-  - [Authors](#authors)
-- [Code Contributors](#code-contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -55,14 +36,14 @@ description of this
 ## Status
 
 ![Status](https://img.shields.io/badge/Status-works-green)
-![GitHub Release Date](https://img.shields.io/github/release-date/Zheng-Bote/repo-template)
+![GitHub Release Date](https://img.shields.io/github/release-date/Zheng-Bote/gha-doctoc)
 
-![GitHub Issues](https://img.shields.io/github/issues/Zheng-Bote/repo-template)
-![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Zheng-Bote/repo-template)
+![GitHub Issues](https://img.shields.io/github/issues/Zheng-Bote/gha-doctoc)
+![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Zheng-Bote/gha-doctoc)
 
-[![Repo - create Repo-Tree in README.md](https://github.com/Zheng-Bote/repo-template/actions/workflows/repo-create_tree_readme.yml/badge.svg)](https://github.com/Zheng-Bote/repo-template/actions/workflows/repo-create_tree_readme.yml)
-[![Repo - add Actions In/Out to README](https://github.com/Zheng-Bote/repo-template/actions/workflows/repo-actions_docu.yml/badge.svg)](https://github.com/Zheng-Bote/repo-template/actions/workflows/repo-actions_docu.yml)
-[![Repo - create TOC of README](https://github.com/Zheng-Bote/repo-template/actions/workflows/repo-create_doctoc.yml/badge.svg)](https://github.com/Zheng-Bote/repo-template/actions/workflows/repo-create_doctoc.yml)
+[![Repo - create Repo-Tree in README.md](https://github.com/Zheng-Bote/gha-doctoc/actions/workflows/repo-create_tree_readme.yml/badge.svg)](https://github.com/Zheng-Bote/gha-doctoc/actions/workflows/repo-create_tree_readme.yml)
+[![Repo - add Actions In/Out to README](https://github.com/Zheng-Bote/gha-doctoc/actions/workflows/repo-actions_docu.yml/badge.svg)](https://github.com/Zheng-Bote/gha-doctoc/actions/workflows/repo-actions_docu.yml)
+[![Repo - create TOC of README](https://github.com/Zheng-Bote/gha-doctoc/actions/workflows/repo-create_doctoc.yml/badge.svg)](https://github.com/Zheng-Bote/gha-doctoc/actions/workflows/repo-create_doctoc.yml)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -77,6 +58,7 @@ bla bla
 ### folder structure
 
 <!-- readme-tree start -->
+
 ```
 .
 ├── .github
@@ -93,6 +75,7 @@ bla bla
 
 2 directories, 9 files
 ```
+
 <!-- readme-tree end -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -172,11 +155,11 @@ see also: <https://linktodocumentation>
 
 #### MIT
 
-**This Repo-Template is using the MIT-License**
+**MIT License**
 
-MIT License
+- doctoc (Node.js): Copyright 2013 Thorsten Lorenz.
 
-Copyright (c) \[year] \[fullname]
+- gha-doctoc (GH Action and Workflows): Copyright (c) 2024 ZHENG Robert
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -204,7 +187,7 @@ SOFTWARE.
 
 ## Code Contributors
 
-![Contributors](https://img.shields.io/github/contributors/Zheng-Bote/repo-template?color=dark-green)
+![Contributors](https://img.shields.io/github/contributors/Zheng-Bote/gha-doctoc?color=dark-green)
 
 [![Zheng Robert](https://img.shields.io/badge/Github-Zheng_Robert-black?logo=github)](https://www.github.com/Zheng-Bote)
 

@@ -1,5 +1,5 @@
 name: Repo - create TOC of README
-# description: https://github.com/technote-space/toc-generator
+# description: https://github.com/thlorenz/doctoc
 
 # README.md:
 # <!-- START doctoc -->
@@ -23,7 +23,7 @@ jobs:
     name: TOC Generator
     runs-on: ubuntu-latest
     steps:
-      - uses: Zheng-Bote/gha-toc-generator@v4.3.4
+      - uses: Zheng-Bote/gha-doctoc@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TARGET_PATHS: ./README.md
